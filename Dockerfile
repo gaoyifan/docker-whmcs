@@ -1,4 +1,4 @@
-FROM ustclug/debian
+FROM debian:jessie
 MAINTAINER Yifan Gao <git@gaoyifan.com>
 
 ENV CACHE_DIR="/srv/docker"

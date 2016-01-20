@@ -1,7 +1,7 @@
 FROM ustclug/debian
 MAINTAINER Yifan Gao <git@gaoyifan.com>
 
-ENV CACHE_DIR="/var/docker"
+ENV CACHE_DIR="/srv/docker"
 
 ENV TEMPLATES_DIR="${CACHE_DIR}/templates" \
     ATTRIBUTE_FIX_LIST="${CACHE_DIR}/attribute_fix_list" \

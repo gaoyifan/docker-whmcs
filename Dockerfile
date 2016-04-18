@@ -19,4 +19,6 @@ ENTRYPOINT ["/sbin/entrypoint.sh"]
 
 EXPOSE 80
 
+VOLUME /var/log
+
 CMD ["/sbin/start.sh"]

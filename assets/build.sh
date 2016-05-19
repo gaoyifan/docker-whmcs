@@ -4,7 +4,7 @@ set -e
 set -x
 
 apt-get update
-apt-get install -qqy nginx esmtp-run unzip subversion libxml2 libcurl4-openssl-dev sqlite3 libsqlite3-dev wget curl php5-cli php5-dev php5-cli php5-sqlite php5-mysql php5-pgsql php5-mcrypt php5-curl php5-json php5-gd php5-fpm php-pear php-apc php5-intl php5-xmlrpc php5-imap
+apt-get install -qqy nginx esmtp-run unzip subversion libxml2 libcurl4-openssl-dev sqlite3 libsqlite3-dev wget curl php5-cli php5-dev php5-cli php5-sqlite php5-mysql php5-pgsql php5-mcrypt php5-curl php5-json php5-gd php5-fpm php-pear php-apc php5-intl php5-xmlrpc php5-imap cron
 apt-get clean -qq
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ustclug/debian
 MAINTAINER Yifan Gao <git@gaoyifan.com>
 
 COPY assets /etc/docker-assets
@@ -13,4 +13,4 @@ EXPOSE 80
 
 VOLUME /var/log
 
-CMD ["/sbin/start.sh"]
+CMD ["/usr/bin/supervisord"]

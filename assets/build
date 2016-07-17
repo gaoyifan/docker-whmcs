@@ -17,5 +17,8 @@ rm -rf /tmp/ioncube /tmp/ioncube_loaders_lin_x86-64.tar.gz
 # enable mcrypt
 php5enmod mcrypt
 
-#install composer
+# install composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# create webroot dir
+mkdir -p /var/www/public

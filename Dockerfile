@@ -1,16 +1,15 @@
-FROM ustclug/debian
-MAINTAINER Yifan Gao <git@gaoyifan.com>
+FROM smartentry/debian:8-beta
 
-COPY assets /etc/docker-assets
+MAINTAINER Yifan Gao <docker@yfgao.com>
 
-COPY entrypoint/entrypoint.sh /sbin/entrypoint.sh
+ADD . $ASSETS_DIR
 
-RUN /sbin/entrypoint.sh build
-
-ENTRYPOINT ["/sbin/entrypoint.sh"]
+RUN smartentry.sh build
 
 EXPOSE 80
 
 VOLUME /var/log
+
+ENTRYPOINT ["/sbin/smartentry.sh"]
 
 CMD ["/usr/bin/supervisord"]

@@ -1,4 +1,4 @@
-FROM smartentry/debian:8-0.3.0
+FROM smartentry/debian:jessie-0.3.2
 
 MAINTAINER Yifan Gao <docker@yfgao.com>
 
@@ -9,7 +9,5 @@ RUN smartentry.sh build
 EXPOSE 80
 
 VOLUME /var/log
-
-ENTRYPOINT ["/sbin/smartentry.sh"]
 
 CMD ["/usr/bin/supervisord"]

@@ -8,6 +8,6 @@ RUN smartentry.sh build
 
 EXPOSE 80
 
-VOLUME /var/log
+VOLUME /var/log /var/www/public
 
 CMD ["/usr/bin/supervisord"]

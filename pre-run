@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $TZ > /etc/timezone
+ln -s -f /usr/share/zoneinfo/$TZ /etc/localtime
